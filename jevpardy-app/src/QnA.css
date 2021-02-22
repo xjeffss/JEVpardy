@@ -35,19 +35,21 @@
     padding: 5vw;
     font-size: 3vw;
 }
-.right {
+button.right {
     border:gray solid 2px;
     background: green;
     font-weight: 600;
     color: white;
     border-radius: 3px;
     padding: 1vw;
+    font-size: 3vw;
 }
-.wrong {
+button.wrong {
     border:gray solid 2px;
     background: red;
     font-weight: 600;
     color: white;
     border-radius: 3px;
     padding: 1vw;
+    font-size: 3vw;
 }

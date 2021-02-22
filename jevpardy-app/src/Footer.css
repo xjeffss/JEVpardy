@@ -1,0 +1,9 @@
+.playerOne{
+    font-size: 5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.playerOneScore {
+    text-align: center;
+    font-size: 4vw;
+}

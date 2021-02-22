@@ -22,8 +22,8 @@ function QnA(props){
             </div>
           </div>}
           <div className="answerButtons">
-              <div className="right">I got it RIGHT!</div>
-              <div className="wrong">I got it wrong!</div>
+              <button className="right">I got it RIGHT!</button>
+              <button className="wrong">I got it wrong!</button>
           </div>
         </div>
     )
