@@ -39,6 +39,7 @@ class App extends Component {
 
         <QnA
          question={this.state.questions}
+         apiDataLoaded={this.state.apiDataLoaded}
         />
 
           

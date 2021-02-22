@@ -5,7 +5,7 @@ function QnA(props){
     console.log(props.question[0])
     return(
         <div>
-           {props.question[0].question}
+          {props.apiDataLoaded && <p> {props.question[0].question}</p>}
         </div>
     )
 }
