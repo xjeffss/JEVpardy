@@ -1,0 +1,16 @@
+
+.board {
+    display: flex;
+    justify-content: center;    
+    background-color: gray;
+}
+
+.categRow {
+    
+}
+
+.catbox {
+    height: auto;
+    width: 1fr;
+    background-color: aqua;
+}
