@@ -35,7 +35,7 @@ class App extends Component {
         </header>  
         <HomePage />
 
-        <Gameboard />
+        <Gameboard questions={this.state.questions}/>
 
         <QnA />
 
