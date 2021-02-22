@@ -1,9 +1,11 @@
 import React from 'react';
+import '../QnA.css';
 
-function QnA(){
+function QnA(props){
+    console.log(props.question[0])
     return(
         <div>
-            QnA
+           {props.question[0].question}
         </div>
     )
 }

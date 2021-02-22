@@ -18,7 +18,7 @@ class App extends Component {
 
   componentDidMount = async() => {
     const jevArray= await axios.get('http://jservice.io/api/clues')
-    console.log(jevArray.data)
+    console.log(jevArray.data[0].question)
      this.setState({
         questions: jevArray.data,
         apiDataLoaded: true,
@@ -37,7 +37,9 @@ class App extends Component {
 
         <Gameboard />
 
-        <QnA />
+        <QnA
+         question={this.state.questions}
+        />
 
           
       </div>
