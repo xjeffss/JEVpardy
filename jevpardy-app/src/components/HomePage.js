@@ -5,11 +5,15 @@ import '../HomePage.css'
 function HomePage(){
     return(
         <div>
-         <h1>Welcome to JEVpardy App</h1>
+        
+        <body>  
 
-         <img src= "https://www.etonline.com/sites/default/files/styles/max_970x546/public/images/2015-02/640_snl_40_jeopardy.jpg?itok=Zu7LWFGh" />
-    
-            
+
+        <h1 className="Title" >Welcome to JEVpardy App</h1>
+        <button>Start Game</button>
+
+
+        </body>  
         </div>
     )
 }
