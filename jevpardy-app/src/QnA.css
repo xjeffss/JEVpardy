@@ -1,0 +1,12 @@
+.question{
+    border: blueviolet solid 3px;
+    width: 70vw;
+    margin-left: 15vw;
+    padding:20px;
+}
+.answer{
+    border: blueviolet solid 3px;
+    width: 70vw;
+    margin-left: 15vw;
+    padding:20px;
+}
