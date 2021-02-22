@@ -28,9 +28,26 @@
 
 }
 .answerButtons {
-    border: black solid 2px;
+
     display: inline-flex;
     justify-content: space-between;
     width: 90vw;
-    padding: 10vw;
+    padding: 5vw;
+    font-size: 3vw;
+}
+.right {
+    border:gray solid 2px;
+    background: green;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    padding: 1vw;
+}
+.wrong {
+    border:gray solid 2px;
+    background: red;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    padding: 1vw;
 }
