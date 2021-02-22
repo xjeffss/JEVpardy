@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import HomePage from './components/HomePage';
+import Gameboard from './components/Gameboard';
+import QnA from './components/QnA';
 import './App.css';
 
 class App extends Component {
@@ -30,6 +33,11 @@ class App extends Component {
             JEVpardy
           </h1>
         </header>  
+        <HomePage />
+
+        <Gameboard />
+
+        <QnA />
 
           
       </div>

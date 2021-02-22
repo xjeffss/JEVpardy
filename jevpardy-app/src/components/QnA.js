@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Gameboard(){
+function QnA(){
     return(
         <div>
-            Gameboard
+            QnA
         </div>
     )
 }
 
-export default Gameboard;
+export default QnA;
