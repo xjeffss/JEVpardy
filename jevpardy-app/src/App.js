@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import Gameboard from './components/Gameboard';
 import QnA from './components/QnA';
 import './App.css';
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -13,6 +14,9 @@ class App extends Component {
     this.state = {
       questions: [],
       apiDataLoaded: false,
+      playerOne : "0",
+      playerTwo : "0",
+      playerThree : "0"
     }
   }
 
@@ -41,6 +45,12 @@ class App extends Component {
          question={this.state.questions}
          apiDataLoaded={this.state.apiDataLoaded}
         />
+        <Footer
+        playerOne={this.state.playerOne}
+        playerTwo={this.state.playerTwo}
+        playerThree={this.state.playerThree}
+        />
+        
 
           
       </div>
