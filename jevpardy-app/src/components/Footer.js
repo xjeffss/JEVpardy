@@ -3,6 +3,7 @@ import React from 'react';
 import '../Footer.css';
 
 function Footer(props) {
+    console.log(props.playerOne)
     return(
         <div className="playerOne">
            Player 1 

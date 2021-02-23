@@ -21,7 +21,7 @@ function Gameboard(props){
         console.log(catFive)}
 
     return(
-        <div>
+      <div> 
         <div className='board'>
             {props.apiDataLoaded ?
                 <div className='gbcontainer'>
@@ -93,15 +93,14 @@ function Gameboard(props){
                 </div>
             : <p>data not loaded</p> }
 
-            
-
-        </div>
-
-        <Footer
-        playerOne={props.playerOne}
-        playerTwo={props.playerTwo}
-        playerThree={props.playerThree}
-        />
+            </div>             
+            <div className="playerOne">
+                Player 1 
+                <div>
+                <input className="playerOneScore" type="integer" value={props.playerOne} />
+                    
+                </div>
+            </div>
         </div>
     )
 }
