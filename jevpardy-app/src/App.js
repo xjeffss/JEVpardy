@@ -60,7 +60,9 @@ class App extends Component {
           )} 
           />
           <Route path="/gameboard" render = {routerProps => (
-            <Gameboard />
+            <Gameboard 
+              questions={this.state.questions}
+              apiDataLoaded={this.state.apiDataLoaded}/>
             )}
             />
           <Route path="/qna" render = {()=> (
@@ -71,9 +73,7 @@ class App extends Component {
               subtractScore={this.subtractScore}
           />)}
           />
-
-        <Gameboard questions={this.state.questions}
-          apiDataLoaded={this.state.apiDataLoaded}/>
+        
         </main>
 
         <Footer
