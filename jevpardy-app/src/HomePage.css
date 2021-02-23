@@ -1,6 +1,6 @@
 
 .Title {
-    position: absolute;
+    position: fixed;
     left: 1%;
     bottom: 5vw;
     color: rgb(139, 37, 41);
