@@ -20,8 +20,8 @@ class App extends Component {
     }
   }
   addScore = () => {
-    console.log("add score");
-    // playerOne= this.state.playerOne;
+    console.log(this.state.questions[0].value);
+    // this.state.playerOne= "this.state.questions[0].value;"
     // this.setState({playerOne:`${playerOne}` + this.state.questions[0].value})
   }
   subtractScore = () => {
