@@ -19,10 +19,16 @@ class App extends Component {
       playerThree : "0"
     }
   }
-  // addScore = () => {
-  //   playerOne= this.state.playerOne;
-  //   this.setState({playerOne:`${playerOne}` + this.state.questions[0].value})
-  // }
+  addScore = () => {
+    console.log("add score");
+    // playerOne= this.state.playerOne;
+    // this.setState({playerOne:`${playerOne}` + this.state.questions[0].value})
+  }
+  subtractScore = () => {
+    console.log("deduct score");
+    // playerOne= this.state.playerOne;
+    // this.setState({playerOne:`${playerOne}` + this.state.questions[0].value})
+  }
   componentDidMount = async() => {
     const jevArray= await axios.get('http://jservice.io/api/clues')
     console.log(jevArray.data[0].question)
@@ -47,6 +53,8 @@ class App extends Component {
         <QnA
          question={this.state.questions}
          apiDataLoaded={this.state.apiDataLoaded}
+         addScore={this.addScore}
+         subtractScore={this.subtractScore}
         />
         <Footer
         playerOne={this.state.playerOne}

@@ -1,11 +1,11 @@
 .tv{
     border:gray solid 3px;
-    background: blueviolet;
+    background: blue;
     color: white;  width: 65vw;
     height: 50vw;
     margin-left: 15vw;
    
-    border-radius: 3% / 50% ;
+    border-radius: 15% / 50% ;
 }
 
 .question{

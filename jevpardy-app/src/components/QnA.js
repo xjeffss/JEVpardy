@@ -24,8 +24,8 @@ function QnA(props){
             </div>
           </div>}
           <div className="answerButtons">
-              <button className="right">I got it RIGHT!</button>
-              <button className="wrong">I got it wrong!</button>
+              <button className="right" onClick={props.addScore}>I got it RIGHT!</button>
+              <button className="wrong"onClick={props.subtractScore}>I got it wrong!</button>
           </div>
         </div>
     )
