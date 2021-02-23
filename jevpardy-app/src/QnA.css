@@ -1,3 +1,6 @@
+footer{
+    display:inherit;
+}
 .tvBox {
     background: black;
     padding: 3vw;
@@ -36,7 +39,6 @@
 
 }
 .answerButtons {
-
     display: inline-flex;
     justify-content: space-between;
     width: 90vw;
@@ -61,3 +63,4 @@ button.wrong {
     padding: 1vw;
     font-size: 3vw;
 }
+

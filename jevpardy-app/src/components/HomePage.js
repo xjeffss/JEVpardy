@@ -10,7 +10,7 @@ function HomePage(){
 
 
         <h1 className="Title" >Welcome to JEVpardy App</h1>
-        <button>Start Game</button>
+        <button class="start-button">Start Game</button>
 
 
         </body>  
