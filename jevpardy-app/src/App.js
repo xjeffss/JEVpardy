@@ -6,7 +6,7 @@ import HomePage from './components/HomePage';
 import Gameboard from './components/Gameboard';
 import QnA from './components/QnA';
 import './App.css';
-import Footer from './components/Footer';
+
 
 class App extends Component {
   constructor(props) {
@@ -20,14 +20,16 @@ class App extends Component {
       playerThree : null
     }
   }
-  addScore = () => {
+  addScore = (e) => {
+    e.preventDefault();
     console.log(this.state.questions[0].value);
     this.setState(
       {playerOne: this.state.playerOne + this.state.questions[0].value});
 
     
   }
-  subtractScore = () => {
+  subtractScore = (e) => {
+    e.preventDefault();
     console.log("deduct score");
     this.setState(
       {playerOne: this.state.playerOne - this.state.questions[0].value});
@@ -59,27 +61,29 @@ class App extends Component {
                  <HomePage />
           )} 
           />
-          <Route path="/gameboard" render = {() => (
-            <Gameboard />
+          <Route path="/gameboard" render = {routerProps => (
+            <Gameboard 
+              questions={this.state.questions}
+              apiDataLoaded={this.state.apiDataLoaded}
+              playerOne={this.state.playerOne}
+              playerTwo={this.state.playerTwo}
+              playerThree={this.state.playerThree}
+              />
             )}
             />
           <Route path="/qna" render = {()=> (
             <QnA
               question={this.state.questions}
               apiDataLoaded={this.state.apiDataLoaded}
+              playerOne={this.state.playerOne}
+              playerTwo={this.state.playerTwo}
+              playerThree={this.state.playerThree}
               addScore={this.addScore}
               subtractScore={this.subtractScore}
           />)}
           />
 
         </main>
-
-        <Footer
-        playerOne={this.state.playerOne}
-        playerTwo={this.state.playerTwo}
-        playerThree={this.state.playerThree}
-        />
-
       </div>
     );
   }

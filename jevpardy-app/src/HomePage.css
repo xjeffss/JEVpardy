@@ -8,7 +8,7 @@
     text-shadow: 3px 3px rgb(219, 219, 113);
 }
 
-button {
+.start-button {
     border-radius: 1vw;
     font-size: 2vw;
     left: 2%;

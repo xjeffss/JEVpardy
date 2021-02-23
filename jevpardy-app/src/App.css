@@ -33,3 +33,15 @@
     transform: rotate(360deg);
   }
 }
+.playerOne{
+  font-size: 5vw;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.playerOneScore {
+  text-align: center;
+  font-size: 4vw;
+  width: 20vw;
+  margin-bottom: 10vw;
+}
