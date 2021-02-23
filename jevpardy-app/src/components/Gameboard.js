@@ -44,7 +44,7 @@ function Gameboard(props){
                         
 
                         <div className='categRow'>
-                            {props.questions.slice(0, 5).map(question=> <div className='tvBox'><div className='catbox'>{question.category.title}</div></div>)}
+                            {props.questions.slice(0, 5).map(question=> <div className='box'><div className='catbox'>{question.category.title}</div></div>)}
                         </div>
 
                     {/* </div>    */}
@@ -68,23 +68,23 @@ function Gameboard(props){
                     <div className='quesBox'>
 
                         <div className='colOne'>
-                            {catOne.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
+                            {catOne.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colTwo'>
-                            {catTwo.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
+                            {catTwo.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colThree'>
-                            {catThree.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
+                            {catThree.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colFour'>
-                            {catFour.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
+                            {catFour.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colFive'>
-                            {catFive.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
+                            {catFive.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                     </div>
