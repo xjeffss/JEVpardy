@@ -11,21 +11,21 @@ function Gameboard(props){
         console.log(catTwo)}
         
     const catThree = props.questions.filter(question => question.category_id === props.questions[2].category_id);{
-        console.log(catTwo)}
+        console.log(catThree)}
 
     const catFour = props.questions.filter(question => question.category_id === props.questions[3].category_id);{
-        console.log(catTwo)}
+        console.log(catFour)}
 
     const catFive = props.questions.filter(question => question.category_id === props.questions[4].category_id);{
-        console.log(catTwo)}
+        console.log(catFive)}
 
     return(
         
         <div className='board'>
             {props.apiDataLoaded ?
                 <div className='container'>
-                    <div className='categRow'>
-                        Gameboard
+                    {/* <div > */}
+                        
                         {/* <div className='catbox'>
                             {props.questions[0].category.title}
                         </div>
@@ -43,11 +43,11 @@ function Gameboard(props){
                         </div> */}
                         
 
-                        <div>
-                            {props.questions.slice(0, 5).map(question=> <div>{question.category.title}</div>)}
+                        <div className='categRow'>
+                            {props.questions.slice(0, 5).map(question=> <div className='tvBox'><div className='catbox'>{question.category.title}</div></div>)}
                         </div>
 
-                    </div>   
+                    {/* </div>    */}
 
 
                         {/* <div>
@@ -68,23 +68,23 @@ function Gameboard(props){
                     <div className='quesBox'>
 
                         <div className='colOne'>
-                            {catOne.map(question => <div className='tv' key={question.id} >{question.value}</div>)}
+                            {catOne.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colTwo'>
-                            {catTwo.map(question => <div className='tv' key={question.id} >{question.value}</div>)}
+                            {catTwo.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colThree'>
-                            {catThree.map(question => <div className='tv' key={question.id} >{question.value}</div>)}
+                            {catThree.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colFour'>
-                            {catFour.map(question => <div className='tv' key={question.id} >{question.value}</div>)}
+                            {catFour.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                         <div className='colFive'>
-                            {catFive.map(question => <div className='tv' key={question.id} >{question.value}</div>)}
+                            {catFive.map(question => <div className='tvBox'><div className='tv' key={question.id} >{question.value}</div></div>)}
                         </div>
 
                     </div>
