@@ -14,20 +14,20 @@ class App extends Component {
     this.state = {
       questions: [],
       apiDataLoaded: false,
-      playerOne : "0",
-      playerTwo : "0",
-      playerThree : "0"
+      playerOne : null,
+      playerTwo : null,
+      playerThree : null
     }
   }
   addScore = () => {
     console.log(this.state.questions[0].value);
     // this.state.playerOne= "this.state.questions[0].value;"
-    // this.setState({playerOne:`${playerOne}` + this.state.questions[0].value})
+    this.setState({playerOne: this.state.playerOne + this.state.questions[0].value})
   }
   subtractScore = () => {
     console.log("deduct score");
     // playerOne= this.state.playerOne;
-    // this.setState({playerOne:`${playerOne}` + this.state.questions[0].value})
+    this.setState({playerOne: this.state.playerOne - this.state.questions[0].value})
   }
   componentDidMount = async() => {
     const jevArray= await axios.get('http://jservice.io/api/clues')
