@@ -11,16 +11,16 @@ function QnA(props){
           {props.apiDataLoaded && 
           <div className="tv">
           <div className="question"> 
-              ${props.question[0].value}
+              ${props.question[props.questionID].value}
               <br/>
             
-              {props.question[0].question}
+              {props.question[props.questionID].question}
             <div className="answer" >
            
                 <br/>   
               Question:
                 <br/> 
-              What is {props.question[0].answer}</div>
+              What is {props.question[props.questionID].answer}</div>
             </div>
           </div>}
           </div>

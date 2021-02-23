@@ -26,11 +26,9 @@ class App extends Component {
     this.setState(
       {playerOne: this.state.playerOne + this.state.questions[0].value});
 
-    
   }
   subtractScore = (e) => {
     e.preventDefault();
-    console.log("deduct score");
     this.setState(
       {playerOne: this.state.playerOne - this.state.questions[0].value});
 
@@ -71,8 +69,9 @@ class App extends Component {
               />
             )}
             />
-          <Route path="/qna" render = {()=> (
+          <Route path="/qna:id" render = {(routerProps)=> (
             <QnA
+              questionID={routerProps.match.params.id}
               question={this.state.questions}
               apiDataLoaded={this.state.apiDataLoaded}
               playerOne={this.state.playerOne}
