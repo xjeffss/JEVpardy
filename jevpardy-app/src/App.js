@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Route, Link, Redirect } from 'react-router-dom';
 
 import HomePage from './components/HomePage';
 import Gameboard from './components/Gameboard';
 import QnA from './components/QnA';
 import './App.css';
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -13,12 +15,27 @@ class App extends Component {
     this.state = {
       questions: [],
       apiDataLoaded: false,
+      playerOne : null,
+      playerTwo : null,
+      playerThree : null
     }
   }
+  addScore = () => {
+    console.log(this.state.questions[0].value);
+    this.setState(
+      {playerOne: this.state.playerOne + this.state.questions[0].value});
 
+    
+  }
+  subtractScore = () => {
+    console.log("deduct score");
+    this.setState(
+      {playerOne: this.state.playerOne - this.state.questions[0].value});
+
+  }
   componentDidMount = async() => {
     const jevArray= await axios.get('http://jservice.io/api/clues')
-    console.log(jevArray.data)
+    console.log(jevArray.data[0].question)
      this.setState({
         questions: jevArray.data,
         apiDataLoaded: true,
@@ -32,14 +49,39 @@ class App extends Component {
           <h1>
             JEVpardy
           </h1>
+          <Link to="/"></Link>
+          <Link to="/gameboard"></Link>
+          <Link to="/qna"></Link>
         </header>  
-        <HomePage />
+        
+        <main>
+          <Route exact path="/" render = {() => (
+                 <HomePage />
+          )} 
+          />
+          <Route path="/gameboard" render = {routerProps => (
+            <Gameboard 
+              questions={this.state.questions}
+              apiDataLoaded={this.state.apiDataLoaded}/>
+            )}
+            />
+          <Route path="/qna" render = {()=> (
+            <QnA
+              question={this.state.questions}
+              apiDataLoaded={this.state.apiDataLoaded}
+              addScore={this.addScore}
+              subtractScore={this.subtractScore}
+          />)}
+          />
+        
+        </main>
 
-        <Gameboard />
+        <Footer
+        playerOne={this.state.playerOne}
+        playerTwo={this.state.playerTwo}
+        playerThree={this.state.playerThree}
+        />
 
-        <QnA />
-
-          
       </div>
     );
   }

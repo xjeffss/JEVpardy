@@ -1,0 +1,62 @@
+
+.board {
+    display: flex;
+    justify-content: center;    
+    background-color: gray;
+}
+
+.container {
+    display: grid;
+    
+
+}
+
+.categRow {
+    display: flex;
+    
+}
+
+
+.catbox {
+    border:gray solid 3px;
+    background: blue;
+    color: white;
+    width: 12vw;
+    height: 11vw;
+    border-radius: 15% / 50% ;    
+    font-size: 3vw;
+    /* font-stretch: 50%; */
+    vertical-align: middle;
+    /* margin: auto; */
+    /* line-height: 11vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quesBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box {
+    background: black;
+    padding: 3vw;
+    width: 13vw;
+    height: 12vw;
+    border: solid 2px gray;
+    /* margin-left: 2vw; */
+    align-items: center;   
+}
+.blueTv{
+    border:gray solid 3px;
+    background: blue;
+    color: white;
+    width: 12vw;
+    height: 11vw;
+    border-radius: 15% / 50% ;
+    justify-content: center;
+    font-size: 3vw;
+    /* padding:4vw; */
+    line-height: 11vw;
+}
