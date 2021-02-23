@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Footer from './Footer';
 import '../Gameboard.css'
 
 function Gameboard(props){
@@ -20,10 +21,10 @@ function Gameboard(props){
         console.log(catFive)}
 
     return(
-        
+        <div>
         <div className='board'>
             {props.apiDataLoaded ?
-                <div className='container'>
+                <div className='gbcontainer'>
                     {/* <div > */}
                         
                         {/* <div className='catbox'>
@@ -91,6 +92,16 @@ function Gameboard(props){
                         
                 </div>
             : <p>data not loaded</p> }
+
+            
+
+        </div>
+
+        <Footer
+        playerOne={props.playerOne}
+        playerTwo={props.playerTwo}
+        playerThree={props.playerThree}
+        />
         </div>
     )
 }
