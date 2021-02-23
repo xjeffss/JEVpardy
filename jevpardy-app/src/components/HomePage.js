@@ -5,17 +5,17 @@ import '../HomePage.css'
 function HomePage(){
     return(
         <div>
-        <div className="image-text-wrapper">
-        <body>  
+        
+        <div className="landingpage">  
 
 
         <h1 className="Title" >Welcome to JEVpardy App</h1>
 
-        <button>Start Game</button>
+        <button className="start-button">Start Game</button>
 
 
-        </body>  
-        </div>
+        </div>  
+        
         </div>
     )
 }
