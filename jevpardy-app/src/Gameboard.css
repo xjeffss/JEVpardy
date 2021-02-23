@@ -14,3 +14,25 @@
     width: 1fr;
     background-color: aqua;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.tvBox {
+    background: black;
+    padding: 3vw;
+    width: 66vw;
+    height: 53vw;
+    margin-left: 15vw;
+}
+.tv{
+    border:gray solid 3px;
+    background: blue;
+    color: white;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 15% / 50% ;
+}
