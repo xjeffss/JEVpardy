@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, Redirect } from 'react-router-dom';
 
 import HomePage from './components/HomePage';
 import Gameboard from './components/Gameboard';
@@ -22,12 +22,16 @@ class App extends Component {
   }
   addScore = () => {
     console.log(this.state.questions[0].value);
-    this.setState({playerOne: this.state.playerOne + this.state.questions[0].value})
+    this.setState(
+      {playerOne: this.state.playerOne + this.state.questions[0].value});
+
     
   }
   subtractScore = () => {
     console.log("deduct score");
-    this.setState({playerOne: this.state.playerOne - this.state.questions[0].value})
+    this.setState(
+      {playerOne: this.state.playerOne - this.state.questions[0].value});
+
   }
   componentDidMount = async() => {
     const jevArray= await axios.get('http://jservice.io/api/clues')
@@ -51,29 +55,31 @@ class App extends Component {
         </header>  
         
         <main>
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/gameboard" component={Gameboard}/>
-          <Route path="/qna" component={QnA}/>
+          <Route exact path="/" render = {() => (
+                 <HomePage />
+          )} 
+          />
+          <Route path="/gameboard" render = {() => (
+            <Gameboard />
+            )}
+            />
+          <Route path="/qna" render = {()=> (
+            <QnA
+              question={this.state.questions}
+              apiDataLoaded={this.state.apiDataLoaded}
+              addScore={this.addScore}
+              subtractScore={this.subtractScore}
+          />)}
+          />
 
         </main>
-        <HomePage />
 
-        <Gameboard />
-
-        <QnA
-         question={this.state.questions}
-         apiDataLoaded={this.state.apiDataLoaded}
-         addScore={this.addScore}
-         subtractScore={this.subtractScore}
-        />
         <Footer
         playerOne={this.state.playerOne}
         playerTwo={this.state.playerTwo}
         playerThree={this.state.playerThree}
         />
-        
 
-          
       </div>
     );
   }

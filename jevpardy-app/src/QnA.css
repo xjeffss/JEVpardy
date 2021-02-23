@@ -10,6 +10,9 @@
     border:gray solid 3px;
     background: blue;
     color: white;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 65vw;
     height: 50vw;
     border-radius: 10% / 50% ;
