@@ -59,7 +59,7 @@ class App extends Component {
                  <HomePage />
           )} 
           />
-          <Route path="/gameboard" render = {() => (
+          <Route path="/gameboard" render = {routerProps => (
             <Gameboard />
             )}
             />
@@ -72,12 +72,9 @@ class App extends Component {
           />)}
           />
 
-<<<<<<< HEAD
         <Gameboard questions={this.state.questions}
           apiDataLoaded={this.state.apiDataLoaded}/>
-=======
         </main>
->>>>>>> 89b9e1dcbd7df1c0b68f57bebcd2d3a795b03bb1
 
         <Footer
         playerOne={this.state.playerOne}
