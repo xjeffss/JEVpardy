@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Route, Link } from 'react-router-dom';
 
 import HomePage from './components/HomePage';
 import Gameboard from './components/Gameboard';
@@ -21,8 +22,8 @@ class App extends Component {
   }
   addScore = () => {
     console.log(this.state.questions[0].value);
-  
     this.setState({playerOne: this.state.playerOne + this.state.questions[0].value})
+    
   }
   subtractScore = () => {
     console.log("deduct score");
@@ -44,7 +45,17 @@ class App extends Component {
           <h1>
             JEVpardy
           </h1>
+          <Link to="/"></Link>
+          <Link to="/gameboard"></Link>
+          <Link to="/qna"></Link>
         </header>  
+        
+        <main>
+          <Route exact path="/" component={HomePage}/>
+          <Route path="/gameboard" component={Gameboard}/>
+          <Route path="/qna" component={QnA}/>
+
+        </main>
         <HomePage />
 
         <Gameboard />

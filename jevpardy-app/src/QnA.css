@@ -12,9 +12,7 @@
     color: white;  
     width: 65vw;
     height: 50vw;
-   
-   
-    border-radius: 15% / 50% ;
+    border-radius: 10% / 50% ;
 }
 
 .question{
@@ -22,8 +20,6 @@
     font-size: 4vw;
     font-weight: 700;
     padding:5vw;
-
-    
 }
 
 .answer p{
