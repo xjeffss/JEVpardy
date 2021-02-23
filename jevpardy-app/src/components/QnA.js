@@ -5,8 +5,8 @@ function QnA(props){
     console.log(props.question[0])
 
     return(
-
         <div>
+        <div className= "tvBox">
           {props.apiDataLoaded && 
           <div className="tv">
           <div className="question"> 
@@ -16,13 +16,13 @@ function QnA(props){
               {props.question[0].question}
             <div className="answer" >
            
-                <br/>
-    
-              Answer:
-                <br/>
-              {props.question[0].answer}</div>
+                <br/>   
+              Question:
+                <br/> 
+              What is {props.question[0].answer}</div>
             </div>
           </div>}
+          </div>
           <div className="answerButtons">
               <button className="right" onClick={props.addScore}>I got it RIGHT!</button>
               <button className="wrong"onClick={props.subtractScore}>I got it wrong!</button>

@@ -1,16 +1,25 @@
+.tvBox {
+    background: black;
+    padding: 3vw;
+    width: 66vw;
+    height: 53vw; 
+    margin-left: 15vw;
+}
+
 .tv{
     border:gray solid 3px;
     background: blue;
-    color: white;  width: 65vw;
+    color: white;  
+    width: 65vw;
     height: 50vw;
-    margin-left: 15vw;
+   
    
     border-radius: 15% / 50% ;
 }
 
 .question{
 
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 700;
     padding:5vw;
 
