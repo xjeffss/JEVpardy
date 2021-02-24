@@ -9,17 +9,20 @@ function Gameboard(props){
     const catOne = props.questions.filter(question => question.category_id === props.questions[0].category_id);{
     console.log(catOne)}
 
-    const catTwo = props.questions.filter(question => question.category_id === props.questions[1].category_id);{
+    const catTwo = props.questions.filter(question => question.category_id === props.questions[30].category_id);{
         console.log(catTwo)}
         
-    const catThree = props.questions.filter(question => question.category_id === props.questions[2].category_id);{
+    const catThree = props.questions.filter(question => question.category_id === props.questions[28].category_id);{
         console.log(catThree)}
 
     const catFour = props.questions.filter(question => question.category_id === props.questions[3].category_id);{
         console.log(catFour)}
 
-    const catFive = props.questions.filter(question => question.category_id === props.questions[4].category_id);{
+    const catFive = props.questions.filter(question => question.category_id === props.questions[55].category_id);{
         console.log(catFive)}
+
+    const quesArray = [catOne, catTwo, catThree, catFour, catFive]
+        console.log(quesArray);
 
     return(
       <div> 
@@ -45,9 +48,14 @@ function Gameboard(props){
                         </div> */}
                         
 
-                        <div className='categRow'>
+                        {/* <div className='categRow'>
                             {props.questions.slice(0, 5).map(question=> <div className='box'><div className='catbox'>{question.category.title}</div></div>)}
+                        </div> */}
+
+                        <div className='categRow'>
+                            {quesArray.map(question => <div className='box'><div className='catbox'>{question[0].category.title}</div></div>)}
                         </div>
+
 
                     {/* </div>    */}
 
