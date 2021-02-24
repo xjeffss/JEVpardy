@@ -38,6 +38,8 @@ class App extends Component {
     const questionList = jevArray.data.filter(ques => ques.value != null)
     console.log(jevArray.data);
     console.log(questionList);
+
+    // const catArray = 
     
      this.setState({
         questions: questionList,
