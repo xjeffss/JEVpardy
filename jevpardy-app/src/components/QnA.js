@@ -1,6 +1,7 @@
 import React from 'react';
 import '../QnA.css';
 
+
 function QnA(props){
     console.log(props.question[0])
 
@@ -27,6 +28,13 @@ function QnA(props){
               <button className="right" onClick={props.addScore}>I got it RIGHT!</button>
               <button className="wrong"onClick={props.subtractScore}>I got it WRONG!</button>
           </div>
+          <div className="playerOne">
+           Player 1 
+           <div>
+           <input className="playerOneScore" type="integer" value={props.playerOne} />
+               
+            </div>
+        </div>
         </div>
     )
 }
