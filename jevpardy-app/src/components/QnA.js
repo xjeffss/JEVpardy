@@ -19,7 +19,7 @@ function QnA(props){
             <div className= "question">
               {props.question[props.questionID].question}
               </div>
-            <div className="answer" >
+            <div className="answer">
  
               Question:
                 <br/> 

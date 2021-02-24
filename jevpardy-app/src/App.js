@@ -73,12 +73,12 @@ class App extends Component {
               subtractScore={this.subtractScore}
           />)}
           />
-<Link to="/gameboard">Return to Gameboard</Link>
+
         </main>
         
       </div>
     );
-  }
+  } 
 }
 
 export default App;

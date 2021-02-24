@@ -9,11 +9,12 @@
 }
 
 .start-button {
+    display: flex;
+    justify-content: end;
     border-radius: 1vw;
     font-size: 2vw;
     left: 2%;
-    bottom: 5vw;
-    position: absolute;
+   bottom: 5vh;
     color: rgb(139, 37, 41);
     background-color:  rgb(219, 219, 113);
 }
