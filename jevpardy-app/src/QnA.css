@@ -36,7 +36,7 @@ footer{
     font-size: 4vw;
     font-weight: 700;
     animation-name: unhide;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-timing-function: step-end;
     opacity: 1;
 }
