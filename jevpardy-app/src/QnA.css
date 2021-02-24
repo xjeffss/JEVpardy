@@ -27,17 +27,25 @@ footer{
     font-weight: 700;
     padding:5vw;
 }
+.value {
+    font-size: 6vw;
+    font-weight: 700; 
+}
 
-.answer p{
- 
+.answer {
+    font-size: 4vw;
     font-weight: 700;
-    transition: opacity 5s;
+    transition: opacity 5s step-end;
+}
+.answer.active {
+    opacity: 1;
+    height: auto;
+}
+.redirect {
+    background: ghostwhite;
+    text-decoration: ghostwhite;
 }
 
-.answer p.load{
-   opacity: 1;
-
-}
 .answerButtons {
     display: inline-flex;
     justify-content: space-between;
