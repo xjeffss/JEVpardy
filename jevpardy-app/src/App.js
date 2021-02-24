@@ -61,10 +61,10 @@ class App extends Component {
               />
             )}
             />
-          <Route path="/qna:id" render = {(routerProps)=> (
+          <Route path="/qna/:id" render = {(routerProps)=> (
             <QnA
               questionID={routerProps.match.params.id}
-              question={this.state.questions}
+              questions={this.state.questions}
               apiDataLoaded={this.state.apiDataLoaded}
               playerOne={this.state.playerOne}
               playerTwo={this.state.playerTwo}

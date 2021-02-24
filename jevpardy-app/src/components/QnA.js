@@ -4,7 +4,11 @@ import { Route, Link, Redirect } from 'react-router-dom';
 
 
 function QnA(props){
-    console.log(props.question[0])
+    console.log(props.questions[1])
+
+    const foundQuestion = props.questions.find(question=> {
+        return question.id === props.match.params.id;
+    })
 
     return(
         <div>
@@ -13,17 +17,17 @@ function QnA(props){
           {props.apiDataLoaded && 
           <div className="tv">
           <div className="value"> 
-              ${props.question[props.questionID].value}
+              ${foundQuestion.value}
             <div/>  
 
             <div className= "question">
-              {props.question[props.questionID].question}
+              {foundQuestion.question}
               </div>
             <div className="answer">
  
               Question:
                 <br/> 
-              What is {props.question[props.questionID].answer}</div>
+              What is {foundQuestion.answer}</div>
             </div>
           </div>}
           </div>
