@@ -61,7 +61,7 @@ class App extends Component {
               />
             )}
             />
-          <Route path="/qna:id" render = {(routerProps)=> (
+          <Route path="/qna/:id" render = {(routerProps)=> (
             <QnA
               questionID={routerProps.match.params.id}
               question={this.state.questions}
@@ -71,6 +71,7 @@ class App extends Component {
               playerThree={this.state.playerThree}
               addScore={this.addScore}
               subtractScore={this.subtractScore}
+              {...routerProps} 
           />)}
           />
 
