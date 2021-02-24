@@ -17,15 +17,14 @@ class App extends Component {
       apiDataLoaded: false,
       playerOne : null,
       playerTwo : null,
-      playerThree : null
+      playerThree : null,
+      // redirect : null
     }
   }
   addScore = (e) => {
     e.preventDefault();
-    console.log(this.state.questions[0].value);
     this.setState(
       {playerOne: this.state.playerOne + this.state.questions[0].value});
-
   }
   subtractScore = (e) => {
     e.preventDefault();
@@ -45,14 +44,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">   
-        <header>
-          <h1>
-            JEVpardy
-          </h1>
-          <Link to="/"></Link>
-          <Link to="/gameboard"></Link>
-          <Link to="/qna"></Link>
-        </header>  
+
         
         <main>
           <Route exact path="/" render = {() => (
@@ -81,8 +73,9 @@ class App extends Component {
               subtractScore={this.subtractScore}
           />)}
           />
-
+<Link to="/gameboard">Return to Gameboard</Link>
         </main>
+        
       </div>
     );
   }
