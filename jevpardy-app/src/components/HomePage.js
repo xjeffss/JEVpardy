@@ -5,15 +5,22 @@ import '../HomePage.css'
 function HomePage(){
     return(
         <div>
-        
-        <body>  
 
 
         <h1 className="Title" >Welcome to JEVpardy App</h1>
-        <button class="start-button">Start Game</button>
+
+        <button className="start-button">Start Game</button>
+
+        <select className="players" id="players">
+            <option value="1player">1 player</option>
+            <option value="2player">2 player</option>
+            <option value="3player">3 player</option>
 
 
-        </body>  
+
+        </select>
+
+        
         </div>
     )
 }
