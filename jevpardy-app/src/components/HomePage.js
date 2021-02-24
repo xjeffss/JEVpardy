@@ -9,7 +9,7 @@ function HomePage(){
 
         <h1 className="Title" >Welcome to JEVpardy App</h1>
 
-        <button className="start-button" to='/gameboard'>Start Game</button>
+        <button className="start-button">Start Game</button>
 
         <select className="players" id="players">
             <option value="1player">1 player</option>

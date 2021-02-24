@@ -34,11 +34,11 @@ function QnA(props){
           </div>
           <div className="answerButtons">
               
-              <button className="right" onClick={props.addScore}>I got it RIGHT!</button>
+              <button className="right" onClick={() =>props.addScore(foundQuestion.value)}>I got it RIGHT!</button>
              <div className="redirect">
                  <Link  to="/gameboard">Return to Gameboard</Link>
               </div>
-              <button className="wrong"onClick={props.subtractScore}>I got it WRONG!</button>
+              <button className="wrong"onClick={() =>props.subtractScore(foundQuestion.value)}>I got it WRONG!</button>
           </div>
             <div className="playerOne">
                 Player 1 
