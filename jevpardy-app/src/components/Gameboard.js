@@ -69,7 +69,7 @@ function Gameboard(props){
                     <div className='quesBox'>
 
                         <div className='colOne'>
-                            {catOne.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
+                            {catOne.map(question => <div className='box'><Link to={'/QnA' + question.id}  ><div className='blueTv' key={question.id}>{question.value}</div></Link></div>)}
                         </div>
 
                         <div className='colTwo'>
