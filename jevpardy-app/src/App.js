@@ -18,18 +18,18 @@ class App extends Component {
       playerOne : null,
       playerTwo : null,
       playerThree : null,
-      // redirect : null
+      num:null
     }
   }
-  addScore = (e) => {
-    e.preventDefault();
+  addScore = (num) => {
+
     this.setState(
-      {playerOne: this.state.playerOne + this.state.questions[0].value});
+      {playerOne: this.state.playerOne + num});
   }
-  subtractScore = (e) => {
-    e.preventDefault();
+  subtractScore = (num) => {
+
     this.setState(
-      {playerOne: this.state.playerOne - this.state.questions[0].value});
+      {playerOne: this.state.playerOne - num});
 
   }
   componentDidMount = async() => {

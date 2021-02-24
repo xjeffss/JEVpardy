@@ -30,15 +30,23 @@ function QnA(props){
                 <br/> 
               What is {foundQuestion.answer}</div>
             </div>
+            
+
           </div>}
+<div className="instructions">
+                ^ Move Pointer Here for Answer ^
+            </div>
           </div>
           <div className="answerButtons">
-              
-              <button className="right" onClick={props.addScore}>I got it RIGHT!</button>
+               <Link  to="/gameboard">
+              <button className="right" onClick={() =>props.addScore(foundQuestion.value)}>I got it RIGHT!</button>
+                </Link>
              <div className="redirect">
-                 <Link  to="/gameboard">Return to Gameboard</Link>
+              
               </div>
-              <button className="wrong"onClick={props.subtractScore}>I got it WRONG!</button>
+              <Link  to="/gameboard">
+              <button className="wrong"onClick={() =>props.subtractScore(foundQuestion.value)}>I got it WRONG!</button>
+              </Link>
           </div>
             <div className="playerOne">
                 Player 1 
