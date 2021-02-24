@@ -33,6 +33,7 @@ function QnA(props){
           </div>}
           </div>
           <div className="answerButtons">
+              
               <button className="right" onClick={props.addScore}>I got it RIGHT!</button>
              <div className="redirect">
                  <Link  to="/gameboard">Return to Gameboard</Link>
