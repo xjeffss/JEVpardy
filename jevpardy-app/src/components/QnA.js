@@ -4,11 +4,12 @@ import { Route, Link, Redirect } from 'react-router-dom';
 
 
 function QnA(props){
-    console.log(props.questions[1])
+ 
 
     const foundQuestion = props.questions.find(question=> {
-        return question.id === props.match.params.id;
+         return question.id == props.match.params.id;     
     })
+
 
     return(
         <div>
