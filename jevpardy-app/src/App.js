@@ -71,6 +71,7 @@ class App extends Component {
               playerThree={this.state.playerThree}
               addScore={this.addScore}
               subtractScore={this.subtractScore}
+              {...routerProps} 
           />)}
           />
 

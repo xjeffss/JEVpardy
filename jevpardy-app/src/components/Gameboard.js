@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
+import Footer from './Footer';
 import '../Gameboard.css'
 
 function Gameboard(props){
@@ -23,7 +25,7 @@ function Gameboard(props){
       <div> 
         <div className='board'>
             {props.apiDataLoaded ?
-                <div className='container'>
+                <div className='gbcontainer'>
                     {/* <div > */}
                         
                         {/* <div className='catbox'>
@@ -68,23 +70,23 @@ function Gameboard(props){
                     <div className='quesBox'>
 
                         <div className='colOne'>
-                            {catOne.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
+                            {catOne.map(question => <div className='box'><Link to={`/QnA/${question.id}`}  ><div className='blueTv' key={question.id}>{question.value}</div></Link></div>)}
                         </div>
 
                         <div className='colTwo'>
-                            {catTwo.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
+                            {catTwo.map(question => <div className='box'><Link to={`/QnA/${question.id}`}  ><div className='blueTv' key={question.id} >{question.value}</div></Link></div>)}
                         </div>
 
                         <div className='colThree'>
-                            {catThree.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
+                            {catThree.map(question => <div className='box'><Link to={`/QnA/${question.id}`}  ><div className='blueTv' key={question.id} >{question.value}</div></Link></div>)}
                         </div>
 
                         <div className='colFour'>
-                            {catFour.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
+                            {catFour.map(question => <div className='box'><Link to={`/QnA/${question.id}`}  ><div className='blueTv' key={question.id} >{question.value}</div></Link></div>)}
                         </div>
 
                         <div className='colFive'>
-                            {catFive.map(question => <div className='box'><div className='blueTv' key={question.id} >{question.value}</div></div>)}
+                            {catFive.map(question => <div className='box'><Link to={`/QnA/${question.id}`}  ><div className='blueTv' key={question.id} >{question.value}</div></Link></div>)}
                         </div>
 
                     </div>
