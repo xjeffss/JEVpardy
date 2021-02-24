@@ -107,7 +107,7 @@ function Gameboard(props){
                 Player 1 
                 <div>
                 <input className="playerOneScore" type="integer" value={props.playerOne} />
-                    
+                    {/* Because Jeff can't make this work */}
                 </div>
             </div>
         </div>
