@@ -39,7 +39,8 @@ class App extends Component {
     console.log(jevArray.data);
     console.log(questionList);
 
-    // const catArray = 
+    // const catArray = questionList.findUnique(cate => cate.category_id);
+    //  console.log(catArray);
     
      this.setState({
         questions: questionList,
