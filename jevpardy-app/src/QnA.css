@@ -35,12 +35,25 @@ footer{
 .answer {
     font-size: 4vw;
     font-weight: 700;
-    opacity: 0;
-    transition: opacity 5s step-end;
-}
-.answer:hover {
+    animation-name: unhide;
+    animation-duration: 5s;
+    animation-timing-function: step-end;
     opacity: 1;
-    height: auto;
+}
+@keyframes unhide {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0
+    }
+  
+    100% {
+      opacity:0;
+    
+    }
+
 }
 .redirect {
     background: ghostwhite;

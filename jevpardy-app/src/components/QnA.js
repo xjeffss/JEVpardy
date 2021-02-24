@@ -30,7 +30,12 @@ function QnA(props){
                 <br/> 
               What is {foundQuestion.answer}</div>
             </div>
+            
+
           </div>}
+<div className="instructions">
+                ^ Move Pointer Here for Answer ^
+            </div>
           </div>
           <div className="answerButtons">
               
