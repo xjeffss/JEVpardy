@@ -4,7 +4,7 @@ import { Route, Link, Redirect } from 'react-router-dom';
 
 
 function QnA(props){
-    console.log(props.question[0])
+    console.log(props.question[1])
 
     return(
         <div>
