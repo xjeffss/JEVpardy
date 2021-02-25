@@ -97,6 +97,10 @@ function Gameboard(props){
                             {catFive.map(question => <div className='box'><Link to={`/QnA/${question.id}`}  ><div className='blueTv' key={question.id} >{question.value}</div></Link></div>)}
                         </div>
 
+                        {/* <div className='colFive'>
+                            {catFive.map(question => <div className='box'>{this.onClick ? <Link to={`/QnA/${question.id}`}  ><div className='blueTv' key={question.id} >{question.value}</div></Link> : <a><div className='blueTv' key={question.id} >{question.value}</div></a>}</div>)}
+                        </div> */}
+
                     </div>
                         
                 </div>
