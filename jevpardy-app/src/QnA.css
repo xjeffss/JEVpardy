@@ -23,7 +23,7 @@ footer{
 .instructions {
     color: white;
     font-weight: bold;
-    font-size: vw;
+    font-size: 2.5vw;
 }
 .question{
 
@@ -90,3 +90,6 @@ button.wrong {
     font-size: 3vw;
 }
 
+a.bLink {
+    height: 6vw;
+}
