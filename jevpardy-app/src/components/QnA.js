@@ -51,8 +51,18 @@ function QnA(props){
               <button className="wrong"onClick={() =>props.subtractScore(foundQuestion.value)}>I got it WRONG!</button>
               </Link>
           </div>
+<<<<<<< HEAD
 
             
+=======
+            <div className="playerOne">
+                Score 
+                <div>
+                <input className="playerOneScore" type="integer" value={props.playerOne} />
+                    
+                </div>
+            </div>
+>>>>>>> ed-jev
         </div>
     )
 }
