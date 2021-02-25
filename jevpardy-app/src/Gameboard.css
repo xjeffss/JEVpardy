@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 .gameboard {
     padding: 2vw;
@@ -9,7 +7,6 @@
     text-shadow: 3px 3px rgb(219, 219, 113);
 }
 
->>>>>>> ed-jev
 .board {
     display: flex;
     justify-content: center;    

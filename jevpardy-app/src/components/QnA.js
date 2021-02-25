@@ -51,10 +51,6 @@ function QnA(props){
               <button className="wrong"onClick={() =>props.subtractScore(foundQuestion.value)}>I got it WRONG!</button>
               </Link>
           </div>
-<<<<<<< HEAD
-
-            
-=======
             <div className="playerOne">
                 Score 
                 <div>
@@ -62,7 +58,6 @@ function QnA(props){
                     
                 </div>
             </div>
->>>>>>> ed-jev
         </div>
     )
 }
