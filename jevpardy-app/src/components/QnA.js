@@ -49,7 +49,7 @@ function QnA(props){
               </Link>
           </div>
             <div className="playerOne">
-                Player 1 
+                Score 
                 <div>
                 <input className="playerOneScore" type="integer" value={props.playerOne} />
                     

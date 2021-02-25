@@ -26,6 +26,8 @@ function Gameboard(props){
 
     return(
       <div> 
+           <div className="gameboard" >Let's play JEVpardy!</div>
+
         <div className='board'>
             {props.apiDataLoaded ?
                 <div className='gbcontainer'>
@@ -104,7 +106,7 @@ function Gameboard(props){
 
             </div>             
             <div className="playerOne">
-                Player 1 
+                Score 
                 <div>
                 <input className="playerOneScore" type="integer" value={props.playerOne} />
                     
