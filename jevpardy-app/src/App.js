@@ -49,7 +49,7 @@ class App extends Component {
   }
   componentDidMount = async() => {
     const jevArray= await axios.get('http://jservice.io/api/clues')
-    // console.log(jevArray.data[0].question)
+    
     const questionList = jevArray.data.filter(ques => ques.value != null)
   
     

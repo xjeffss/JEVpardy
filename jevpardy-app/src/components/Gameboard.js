@@ -5,25 +5,13 @@ import Footer from './Footer';
 import '../Gameboard.css'
 
 function Gameboard(props){
-
-    const catOne = props.questions.filter(question => question.category_id === props.questions[0].category_id);{
-    console.log(catOne)}
-
-    const catTwo = props.questions.filter(question => question.category_id === props.questions[30].category_id);{
-        console.log(catTwo)}
-        
-    const catThree = props.questions.filter(question => question.category_id === props.questions[28].category_id);{
-        console.log(catThree)}
-
-    const catFour = props.questions.filter(question => question.category_id === props.questions[3].category_id);{
-        console.log(catFour)}
-
-    const catFive = props.questions.filter(question => question.category_id === props.questions[55].category_id);{
-        console.log(catFive)}
-
+    const catOne = props.questions.filter(question => question.category_id === props.questions[0].category_id);
+    const catTwo = props.questions.filter(question => question.category_id === props.questions[30].category_id);
+    const catThree = props.questions.filter(question => question.category_id === props.questions[28].category_id);
+    const catFour = props.questions.filter(question => question.category_id === props.questions[3].category_id);
+    const catFive = props.questions.filter(question => question.category_id === props.questions[55].category_id);
     const quesArray = [catOne, catTwo, catThree, catFour, catFive]
-        console.log(quesArray);
-
+    
     return(
       <div> 
            <div className="gameboard" >Let's play JEVpardy!</div>
