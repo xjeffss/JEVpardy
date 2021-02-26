@@ -21,6 +21,7 @@ class App extends Component {
       num:null
     }
   }
+
   addScore = (num, id) => {
     const newQuest = this.state.questions.filter(quest => {
       if (quest.id === id) {
@@ -66,22 +67,25 @@ class App extends Component {
         
         <main>
           <Route exact path="/" render = {() => (
-                 <HomePage />
+                 <HomePage 
+
+                 />
           )} 
           />
-          <Route path="/gameboard" render = {routerProps => (
+          <Route path="/gameboard" render = {() => (
             <Gameboard 
               questions={this.state.questions}
               apiDataLoaded={this.state.apiDataLoaded}
               playerOne={this.state.playerOne}
               playerTwo={this.state.playerTwo}
               playerThree={this.state.playerThree}
+              
               />
             )}
             />
           <Route path="/qna/:id" render = {(routerProps)=> (
             <QnA
-              questionID={routerProps.match.params.id}
+
               questions={this.state.questions}
               apiDataLoaded={this.state.apiDataLoaded}
               playerOne={this.state.playerOne}
