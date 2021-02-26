@@ -8,7 +8,7 @@ This is a project utilizing React interaction with HTML, CSS, Javascript and Git
 [Here is the published project.](http://jevpardy.surge.sh/)
 
 #### Entity Relationship Diagram
-![ERD](./images/ERD.png)
+<img src="./public/image/Screen Shot 2021-02-26 at 8.37.40 AM.png">
 
 ### Current Features
 * Welcoming the user
