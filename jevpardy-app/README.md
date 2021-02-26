@@ -33,6 +33,8 @@ This is a project utilizing React interaction with HTML, CSS, Javascript and Git
 
 ### Example Code
 
+public/image/EE2C8F48-26E1-45D3-98F1-5F9D20E33AF1.jpeg
+
 ### Issues and Resolutions
 With three people working on this project we had to figure out how to all work in our own branches without creating errors when merging materials. While we decided to all work in our own branch we still faced some issues with not having the correct amounts of commits or not using the correct commands in Github.  Needless to say we all could use some extra Github experience under our belts.
 
