@@ -19,10 +19,12 @@ This is a project utilizing React interaction with HTML, CSS, Javascript and Git
 * Surprise SNL guest "Turd Ferguson"
 
 ### Planned Features
-!(./public/image/67AF73C7-5A3D-40A6-A578-3A48AE52EC34_4_5005_c.jpeg)
 * Randomize questions
 * Add players so up to 3 can participate
 * Extra CSS styling and pop ups
+<img src="./public/image/67AF73C7-5A3D-40A6-A578-3A48AE52EC34_4_5005_c.jpeg">
+<img src="./public/image/EE2C8F48-26E1-45D3-98F1-5F9D20E33AF1.jpeg">
+<img src="./public/image/87118753-B2DC-4091-ADCA-6E5291A2E5EB.jpeg">
 
 ### Technology Used
 * Utilizing React architecture
@@ -33,8 +35,11 @@ This is a project utilizing React interaction with HTML, CSS, Javascript and Git
 * Surge
 
 ### Example Code
-.js Link add subtract buttons
-https://github.com/countryraised/JEVpardy/blob/main/jevpardy-app/public/image/4040B0CC-D12F-431A-B184-36C5EF48D0C8_4_5005_c.jpeg
+<img src="./public/image/4040B0CC-D12F-431A-B184-36C5EF48D0C8_4_5005_c.jpeg">
+<img src="./public/image/9FB3D81B-8701-4852-8F55-EF7DD539534E.jpeg">
+<img src="./public/image/9796BD3A-C1B1-46C7-A712-ADFAA8D42AE0_4_5005_c.jpeg">
+<img src="./public/image/71F5659F-5A24-4B80-9504-EA4C29EA6898_4_5005_c.jpeg">
+<img src="./public/image/D21D76B7-8FCE-4F2A-8E99-D5C986A21B0A_4_5005_c.jpeg">
 
 ### Issues and Resolutions
 With three people working on this project we had to figure out how to all work in our own branches without creating errors when merging materials. While we decided to all work in our own branch we still faced some issues with not having the correct amounts of commits or not using the correct commands in Github.  Needless to say we all could use some extra Github experience under our belts.
