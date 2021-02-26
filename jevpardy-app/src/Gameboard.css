@@ -71,3 +71,16 @@
     line-height: 11vw;
     text-align: center;
 }
+
+.score{
+    height:8vw;
+}
+
+.reset-button {
+    border-radius: 1vw;
+    font-size: 2vw;
+    left: 12%;
+    top: 6vw;
+    color: rgb(12, 26, 195);
+    background-color:  rgb(219, 219, 113);
+}

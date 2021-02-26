@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Footer from './Footer';
 import '../Gameboard.css'
 
 function Gameboard(props){
+    function reset (){
+        window.location.reload();
+    }
+
     const catOne = props.questions.filter(question => question.category_id === props.questions[0].category_id);
     const catTwo = props.questions.filter(question => question.category_id === props.questions[30].category_id);
     const catThree = props.questions.filter(question => question.category_id === props.questions[28].category_id);
@@ -14,8 +17,8 @@ function Gameboard(props){
     
     return(
       <div> 
-           <div className="gameboard" >Let's play JEVpardy!</div>
-
+           <div className="gameboard" >Let's play<Link to="/" > JEVpardy!</Link></div>
+           
         <div className='board'>
             {props.apiDataLoaded ?
                 <div className='gbcontainer'>                    
@@ -54,9 +57,10 @@ function Gameboard(props){
             </div>             
             <div className="playerOne">
                 Score 
-                <div>
-                <input className="playerOneScore" type="integer" value={props.playerOne} />                    
+                <div className="score">
+                    <input className="playerOneScore" type="integer" value={props.playerOne} />                    
                 </div>
+                <Link to="/Gameboard" onClick={reset}><button className="reset-button">Reset Game</button></Link> 
             </div>
         </div>
     )
