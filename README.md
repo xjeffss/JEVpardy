@@ -1,2 +1,0 @@
-# JEVpardy
-jeopardy game app
