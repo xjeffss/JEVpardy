@@ -19,6 +19,7 @@ This is a project utilizing React interaction with HTML, CSS, Javascript and Git
 * Surprise SNL guest "Turd Ferguson"
 
 ### Planned Features
+!(./public/image/67AF73C7-5A3D-40A6-A578-3A48AE52EC34_4_5005_c.jpeg)
 * Randomize questions
 * Add players so up to 3 can participate
 * Extra CSS styling and pop ups
@@ -32,8 +33,8 @@ This is a project utilizing React interaction with HTML, CSS, Javascript and Git
 * Surge
 
 ### Example Code
-
-public/image/EE2C8F48-26E1-45D3-98F1-5F9D20E33AF1.jpeg
+.js Link add subtract buttons
+https://github.com/countryraised/JEVpardy/blob/main/jevpardy-app/public/image/4040B0CC-D12F-431A-B184-36C5EF48D0C8_4_5005_c.jpeg
 
 ### Issues and Resolutions
 With three people working on this project we had to figure out how to all work in our own branches without creating errors when merging materials. While we decided to all work in our own branch we still faced some issues with not having the correct amounts of commits or not using the correct commands in Github.  Needless to say we all could use some extra Github experience under our belts.
