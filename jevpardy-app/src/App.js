@@ -37,7 +37,7 @@ class App extends Component {
   subtractScore = (num, id) => {
     const newQuest = this.state.questions.filter(quest => {
       if (quest.id === id) {
-        quest.value = ""
+        quest.value = null
       }
       return quest;
    });
