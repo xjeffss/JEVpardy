@@ -5,7 +5,7 @@ This is a project utilizing React interaction with HTML, CSS, Javascript and Git
 ### Project Links
 [Here is the project repository.](https://github.com/countryraised/JEVpardy)
 
-[Here is the published project.](jevpardy.surge.sh)
+[Here is the published project.](http://jevpardy.surge.sh/)
 
 #### Entity Relationship Diagram
 ![ERD](./images/ERD.png)
