@@ -21,20 +21,35 @@ class App extends Component {
       num:null
     }
   }
-  addScore = (num) => {
-
-    this.setState(
-      {playerOne: this.state.playerOne + num});
+  addScore = (num, id) => {
+    const newQuest = this.state.questions.filter(quest => {
+      if (quest.id === id) {
+        quest.value = null
+      }
+      return quest;
+   });
+    this.setState({
+      num : num,
+      playerOne: this.state.playerOne + num,
+      questions: newQuest
+    });
   }
-  subtractScore = (num) => {
-
-    this.setState(
-      {playerOne: this.state.playerOne - num});
-
+  subtractScore = (num, id) => {
+    const newQuest = this.state.questions.filter(quest => {
+      if (quest.id === id) {
+        quest.value = null
+      }
+      return quest;
+   });
+    this.setState({
+      num : num,
+      playerOne: this.state.playerOne - num,
+      questions: newQuest
+    });
   }
   componentDidMount = async() => {
     const jevArray= await axios.get('http://jservice.io/api/clues')
-    // console.log(jevArray.data[0].question)
+    
     const questionList = jevArray.data.filter(ques => ques.value != null)
   
     
