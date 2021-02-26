@@ -21,9 +21,7 @@ class App extends Component {
       num:null
     }
   }
- reset =()=>{
-    window.Gameboard.reload();
- }
+
   addScore = (num, id) => {
     const newQuest = this.state.questions.filter(quest => {
       if (quest.id === id) {
@@ -68,10 +66,9 @@ class App extends Component {
 
         
         <main>
-          <Route exact path="/" render = {(routerProps) => (
+          <Route exact path="/" render = {() => (
                  <HomePage 
-                 reset={this.state.reset}
-                 {...routerProps}
+
                  />
           )} 
           />

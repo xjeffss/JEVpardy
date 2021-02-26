@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../Gameboard.css'
 
 function Gameboard(props){
-    function reset (){
+    function resetGB (){
         window.location.reload();
     }
 
@@ -60,7 +60,7 @@ function Gameboard(props){
                 <div className="score">
                     <input className="playerOneScore" type="integer" value={props.playerOne} />                    
                 </div>
-                <Link to="/Gameboard" onClick={reset}><button className="reset-button">Reset Game</button></Link> 
+                <Link to="/Gameboard" onClick={resetGB}><button className="reset-button">Reset Game</button></Link> 
             </div>
         </div>
     )
