@@ -1,0 +1,95 @@
+footer{
+    display:inherit;
+}
+.tvBox {
+    background: black;
+    padding: 3vw;
+    width: 66vw;
+    height: 53vw; 
+    margin-left: 15vw;
+}
+
+.tv{
+    border:gray solid 3px;
+    background: blue;
+    color: white;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65vw;
+    height: 50vw;
+    border-radius: 10% / 50% ;
+}
+.instructions {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.question{
+
+    font-size: 4vw;
+    font-weight: 700;
+    padding:5vw;
+}
+.value {
+    font-size: 6vw;
+    font-weight: 700; 
+}
+
+.answer {
+    font-size: 4vw;
+    font-weight: 700;
+    animation-name: unhide;
+    animation-duration: 8s;
+    animation-timing-function: step-end;
+    opacity: 1;
+}
+@keyframes unhide {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0
+    }
+  
+    100% {
+      opacity:0;
+    
+    }
+
+}
+.redirect {
+    background: ghostwhite;
+    text-decoration: ghostwhite;
+}
+
+.answerButtons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 90vw;
+    padding: 1vw;
+    font-size: 3vw;
+}
+button.right {
+    border:gray solid 2px;
+    background: green;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    padding: 1vw;
+    font-size: 3vw;
+}
+button.wrong {
+    border:gray solid 2px;
+    background: red;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    padding: 1vw;
+    font-size: 3vw;
+}
+
+a.bLink {
+    height: 6vw;
+}

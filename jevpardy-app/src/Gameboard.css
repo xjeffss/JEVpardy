@@ -1,0 +1,86 @@
+
+.gameboard {
+    padding: 2vw;
+    color: rgb(12, 26, 195);
+    font-size: 5vw;
+    text-shadow: 3px 3px rgb(219, 219, 113);
+}
+
+.board {
+    display: flex;
+    justify-content: center;    
+  
+}
+
+.gbcontainer {
+    display: grid;
+}
+
+.categRow {
+    display: flex;  
+     
+}
+
+.catbox {
+    border:gray solid 3px;
+    background: blue;
+    color: white;
+    width: 14vw;
+    height: 9vw;
+    border-radius: 15% / 50% ;    
+    font-size: 3vw;
+    text-align: center;
+    /* font-stretch: 50%; */
+
+    /* margin: auto; */
+    /* line-height: 11vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1vw;
+}
+
+.quesBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box {
+    background: black;
+    padding: 1vw;
+    width: 15vw;
+    height: 12vw;
+    border: solid 2px gray;
+    /* margin-left: 2vw; */
+    display: flex;  
+    justify-content: center;
+    align-items: center;  
+}
+
+.blueTv{
+    border:gray solid 3px;
+    background: blue;
+    color: white;
+    width: 14vw;
+    height: 11vw;
+    border-radius: 15% / 50% ;
+    justify-content: center;
+    font-size: 3vw;
+    /* padding:4vw; */
+    line-height: 11vw;
+    text-align: center;
+}
+
+.score{
+    height:8vw;
+}
+
+.reset-button {
+    border-radius: 1vw;
+    font-size: 2vw;
+    left: 12%;
+    top: 6vw;
+    color: rgb(12, 26, 195);
+    background-color:  rgb(219, 219, 113);
+}
